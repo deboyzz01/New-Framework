@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Intergration Test" thread-count="1" parallel="classes">
+    <listeners>
+        <listener class-name="plugin.TestListener"/>
+    </listeners>
+    <test name="On Demand - Single Test Case Report" >
+        <packages>
+            <package name="intergrationTest.*">
+        </package>
+        </packages>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

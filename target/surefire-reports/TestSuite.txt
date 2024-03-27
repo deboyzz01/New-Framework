@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.513 sec <<< FAILURE! - in TestSuite
+yourTestMethod1(intergrationTest.Transfer.Marimas1)  Time elapsed: 0.054 sec  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [2] but found [1],
+	expected [2] but found [1],
+	expected [2] but found [1]
+	at intergrationTest.Transfer.Marimas1.yourTestMethod1(Marimas1.java:34)
+
+yourTestMethod111(intergrationTest.Menu.Marimas)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [2] but found [1],
+	expected [2] but found [1],
+	expected [2] but found [1]
+	at intergrationTest.Menu.Marimas.yourTestMethod111(Marimas.java:35)
+

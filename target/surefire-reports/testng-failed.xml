@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Intergration Test]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="plugin.TestListener"/>
+  </listeners>
+  <test thread-count="1" parallel="classes" name="On Demand - Single Test Case Report(failed)" verbose="0">
+    <classes>
+      <class name="intergrationTest.Menu.Marimas">
+        <methods>
+          <include name="yourTestMethod111"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- intergrationTest.Menu.Marimas -->
+      <class name="intergrationTest.Transfer.Marimas1">
+        <methods>
+          <include name="yourTestMethod1"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- intergrationTest.Transfer.Marimas1 -->
+    </classes>
+  </test> <!-- On Demand - Single Test Case Report(failed) -->
+</suite> <!-- Failed suite [Intergration Test] -->
