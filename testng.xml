@@ -4,10 +4,12 @@
     <listeners>
         <listener class-name="plugin.TestListener"/>
     </listeners>
+
+
     <test name="On Demand - Single Test Case Report" >
-        <packages>
-            <package name="IntegrationTest.*">
-        </package>
-        </packages>
+        <classes>
+            <class name="intergrationTest.login.LoginTest">
+        </class>
+        </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

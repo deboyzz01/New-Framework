@@ -1,105 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-27T14:07:15 WIB" name="Intergration Test" finished-at="2024-03-27T14:07:15 WIB" duration-ms="133">
+  <suite started-at="2024-05-21T21:22:18 WIB" name="Surefire suite" finished-at="2024-05-21T21:22:20 WIB" duration-ms="2878">
     <groups>
     </groups>
-    <test started-at="2024-03-27T14:07:15 WIB" name="On Demand - Single Test Case Report" finished-at="2024-03-27T14:07:15 WIB" duration-ms="133">
-      <class name="intergrationTest.Menu.Marimas">
-        <test-method is-config="true" signature="BeforeTest()[pri:0, instance:intergrationTest.Menu.Marimas@757acd7b]" started-at="2024-03-27T14:07:15 WIB" name="BeforeTest" finished-at="2024-03-27T14:07:15 WIB" duration-ms="3" status="PASS">
+    <test started-at="2024-05-21T21:22:18 WIB" name="Surefire test" finished-at="2024-05-21T21:22:20 WIB" duration-ms="2878">
+      <class name="intergrationTest.login.LoginTest">
+        <test-method signature="LoginBerhasil()[pri:0, instance:intergrationTest.login.LoginTest@6166e06f]" started-at="2024-05-21T21:22:18 WIB" name="LoginBerhasil" finished-at="2024-05-21T21:22:20 WIB" duration-ms="2870" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method signature="yourTestMethod22()[pri:0, instance:intergrationTest.Menu.Marimas@757acd7b]" started-at="2024-03-27T14:07:15 WIB" name="yourTestMethod22" finished-at="2024-03-27T14:07:15 WIB" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- yourTestMethod22 -->
-        <test-method signature="yourTestMethod111()[pri:0, instance:intergrationTest.Menu.Marimas@757acd7b]" started-at="2024-03-27T14:07:15 WIB" name="yourTestMethod111" finished-at="2024-03-27T14:07:15 WIB" duration-ms="0" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [2] but found [1],
-expected [2] but found [1],
-expected [2] but found [1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [2] but found [1],
-expected [2] but found [1],
-expected [2] but found [1]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at intergrationTest.Menu.Marimas.yourTestMethod111(Marimas.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- yourTestMethod111 -->
-      </class> <!-- intergrationTest.Menu.Marimas -->
-      <class name="intergrationTest.Transfer.Marimas1">
-        <test-method is-config="true" signature="BeforeTest()[pri:0, instance:intergrationTest.Transfer.Marimas1@f2ff811]" started-at="2024-03-27T14:07:15 WIB" name="BeforeTest" finished-at="2024-03-27T14:07:15 WIB" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method signature="yourTestMethod1()[pri:0, instance:intergrationTest.Transfer.Marimas1@f2ff811]" started-at="2024-03-27T14:07:15 WIB" name="yourTestMethod1" finished-at="2024-03-27T14:07:15 WIB" duration-ms="7" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [2] but found [1],
-expected [2] but found [1],
-expected [2] but found [1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [2] but found [1],
-expected [2] but found [1],
-expected [2] but found [1]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at intergrationTest.Transfer.Marimas1.yourTestMethod1(Marimas1.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- yourTestMethod1 -->
-        <test-method signature="yourTestMethod2()[pri:0, instance:intergrationTest.Transfer.Marimas1@f2ff811]" started-at="2024-03-27T14:07:15 WIB" name="yourTestMethod2" finished-at="2024-03-27T14:07:15 WIB" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- yourTestMethod2 -->
-      </class> <!-- intergrationTest.Transfer.Marimas1 -->
-    </test> <!-- On Demand - Single Test Case Report -->
-  </suite> <!-- Intergration Test -->
+        </test-method> <!-- LoginBerhasil -->
+      </class> <!-- intergrationTest.login.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
