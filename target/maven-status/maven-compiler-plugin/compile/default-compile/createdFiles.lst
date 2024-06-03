@@ -1,9 +1,0 @@
-service/login/respon/LoginRespon$Message.class
-plugin/TestListener.class
-service/login/request/LoginReqBody.class
-plugin/report/GlobalVarReport.class
-service/login/respon/LoginRespon$DataObject.class
-service/login/respon/LoginHeaderRespon.class
-plugin/RemoveCharsetFilter.class
-service/login/LoginService.class
-service/login/respon/LoginRespon.class

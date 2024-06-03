@@ -7,9 +7,9 @@
 
 
     <test name="On Demand - Single Test Case Report" >
-        <classes>
-            <class name="intergrationTest.login.LoginTest">
-        </class>
-        </classes>
+        <packages>
+            <package name="intergrationTest.login.*">
+            </package>
+        </packages>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
