@@ -5,12 +5,13 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import plugin.Endpoint;
 import plugin.GlobalVariable;
+import plugin.TestListener;
 import plugin.restassure.RestAssureFramework;
 import java.util.HashMap;
 import java.util.Map;
 
 public class LoginTest {
-
+    TestListener testListener = new TestListener();
     GlobalVariable globalVariable = new GlobalVariable();
     Endpoint point = new Endpoint();
     @Test
@@ -57,6 +58,7 @@ public class LoginTest {
         softAssert.assertNotNull(contentType);
 
         softAssert.assertAll();
+        testListener.Report("SEMUA AKSES SUDAH BENAR");
 
     }
     @Test
@@ -92,16 +94,17 @@ public class LoginTest {
 
 
         // Extracting specific field from response body
-        String userId = response.jsonPath().getString("timestamp");
+        String timestamp = response.jsonPath().getString("timestamp");
 
 
         // Extracting specific header from response headers
-        String contentType = response.getHeader("access_token");
+        String access_token = response.getHeader("access_token");
 
 
 
         softAssert.assertEquals(response.getStatusCode(), 400);
-        softAssert.assertNotNull(contentType);
+        softAssert.assertNotNull(access_token);
+
 
         softAssert.assertAll();
 

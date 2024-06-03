@@ -35,24 +35,20 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult result) {
-       System.out.println("Test passed");
+
         GlobalVariable.test.pass("Test passed");
 
-//        extent.flush();
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-
-        Markup errorDetail = MarkupHelper.createCodeBlock("\n"+"Test case failed: " +"\n"+ result.getThrowable().getMessage()+"\n");
-        GlobalVariable.test.fail(errorDetail);
+        GlobalVariable.test.fail(result.getThrowable());
         StackTraceElement[] stackTrace = result.getThrowable().getStackTrace();
         if (stackTrace.length > 0) {
             String errorLocation = "Error at " + stackTrace[0].getClassName() + "." + stackTrace[0].getMethodName() +
                     "(" + stackTrace[0].getFileName() + ":" + stackTrace[0].getLineNumber() + ")";
 
-            Markup error = MarkupHelper.createCodeBlock(errorLocation);
-            GlobalVariable.test.fail(error);
+            GlobalVariable.test.fail(errorLocation);
         }
     }
 
@@ -62,7 +58,6 @@ public class TestListener implements ITestListener {
     }
 
     public void Report(String report){
-        System.out.println("GlobalVar.test  :"+ GlobalVariable.nameTc);
         GlobalVariable.test.info(report);
     }
 
