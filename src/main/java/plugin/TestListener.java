@@ -15,7 +15,7 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("sandy.html");
+        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("report.html");
         extent.attachReporter(htmlReporter);
     }
 
