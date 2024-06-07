@@ -1,9 +1,8 @@
-package plugin.restassure;
+package plugin;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-import java.net.URI;
 import java.util.Map;
 
 import static io.restassured.config.EncoderConfig.encoderConfig;
